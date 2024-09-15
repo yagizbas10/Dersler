@@ -63,6 +63,32 @@
 # print(çiftmi(5))
 
 
-liste = [1,2,3,4,5,6,7,8,9,10]
-mp = map(lambda x:x**2,liste)
-print(tuple(mp))
+# liste = [1,2,3,4,5,6,7,8,9,10]
+# mp = map(lambda x:x**2,liste)
+# print(tuple(mp))
+
+
+
+# def uzunluk(metin):
+#     return len(uzunluk)
+
+# veri =("apple","samsung","vestel","arçelik","bosch",[1,2,3,4,5,6,7,8,9,10],{123,234,435,56,767,90,43})
+
+# mapp = map(uzunluk,veri)
+# print(tuple(mapp))
+
+data= ["python","html","css","bootstrap","django",50,100,150,200]
+def ilkharf(x):
+    sonuc = str(x)[0]
+    return sonuc
+
+birleşim= map(ilkharf,data)
+print(tuple(birleşim))
+
+y = [0,1,2,3,4,5,6,7,8,9,10]
+
+def çiftsayı(x):
+    return x%2 == 0
+
+filtre = filter(çiftsayı,y)
+print(tuple(filtre))
