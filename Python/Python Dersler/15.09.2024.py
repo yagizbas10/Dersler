@@ -24,9 +24,21 @@
 # m = Vücütkitleindeks(a,b)
 # print(m)
 
-def kimlik(**kwargs):
-    return kwargs
+# def kimlik(**kwargs):
+#     return kwargs
 
-n = kimlik(ad= "Yağız",soyad = "Baş", yaş = 15)
-print(n)
-print(type(n))
+# n = kimlik(ad= "Yağız",soyad = "Baş", yaş = 15)
+# print(n)
+# print(type(n))
+
+def deneme(*args,**kwargs):
+    return args,kwargs
+
+p = deneme("Django","html", 1,2,3,4,5,tc = 1111,ad="Ahmet",Soyad="Yılmaz")
+
+print(p)
+print(type(p))
+
+print(len(p))
+print(p[1],["Soyad"])
+print(p[0][4])
