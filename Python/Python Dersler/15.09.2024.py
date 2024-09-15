@@ -44,10 +44,20 @@
 # print(p[0][4])
 
 
-def kareal(x):
-    return x**2
-print(kareal(6))
+# def kareal(x):
+#     return x**2
+# print(kareal(6))
 
 
-b= lambda a: a**3
-print(b(5))
+# b= lambda a: a**3
+# print(b(5))
+
+
+def topla(x,y):
+    return x + y
+
+n = lambda x,y:x+y
+
+çiftmi = lambda a:"Çift" if a % 2 == 0 else "Tek"
+
+print(çiftmi(5))
