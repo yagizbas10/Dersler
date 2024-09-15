@@ -13,13 +13,20 @@
 
 #Local Global değişkenleri
 
-def Vücütkitleindeks(kilo,boy):
-    sonuc = kilo / boy**2
-    sonuc2 = kilo/boy
-    return sonuc,sonuc2
+# def Vücütkitleindeks(kilo,boy):
+#     sonuc = kilo / boy**2
+#     sonuc2 = kilo/boy
+#     return sonuc,sonuc2
 
-a = int(input("Boyunuzu giriniz: "))
-b = float(input("Kilonuzu giriniz: "))
+# a = int(input("Boyunuzu giriniz: "))
+# b = float(input("Kilonuzu giriniz: "))
 
-m = Vücütkitleindeks(a,b)
-print(m)
+# m = Vücütkitleindeks(a,b)
+# print(m)
+
+def kimlik(**kwargs):
+    return kwargs
+
+n = kimlik(ad= "Yağız",soyad = "Baş", yaş = 15)
+print(n)
+print(type(n))
