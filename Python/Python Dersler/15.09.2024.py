@@ -31,14 +31,23 @@
 # print(n)
 # print(type(n))
 
-def deneme(*args,**kwargs):
-    return args,kwargs
+# def deneme(*args,**kwargs):
+#     return args,kwargs
 
-p = deneme("Django","html", 1,2,3,4,5,tc = 1111,ad="Ahmet",Soyad="Yılmaz")
+# p = deneme("Django","html", 1,2,3,4,5,tc = 1111,ad="Ahmet",Soyad="Yılmaz")
 
-print(p)
-print(type(p))
+# print(p)
+# print(type(p))
 
-print(len(p))
-print(p[1],["Soyad"])
-print(p[0][4])
+# print(len(p))
+# print(p[1],["Soyad"])
+# print(p[0][4])
+
+
+def kareal(x):
+    return x**2
+print(kareal(6))
+
+
+b= lambda a: a**3
+print(b(5))
