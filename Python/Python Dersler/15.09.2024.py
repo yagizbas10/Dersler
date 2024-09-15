@@ -53,11 +53,16 @@
 # print(b(5))
 
 
-def topla(x,y):
-    return x + y
+# def topla(x,y):
+#     return x + y
 
-n = lambda x,y:x+y
+# n = lambda x,y:x+y
 
-çiftmi = lambda a:"Çift" if a % 2 == 0 else "Tek"
+# çiftmi = lambda a:"Çift" if a % 2 == 0 else "Tek"
 
-print(çiftmi(5))
+# print(çiftmi(5))
+
+
+liste = [1,2,3,4,5,6,7,8,9,10]
+mp = map(lambda x:x**2,liste)
+print(tuple(mp))
