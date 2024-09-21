@@ -36,41 +36,49 @@
 
 # print("""
 # ------ATM-------
-# 1)Bakiye Sorgu
-# 2)Yatırma
-# 3)Çekme
-# 4)Çıkış(q)
+# 1) Bakiye Sorgu
+# 2) Yatırma
+# 3) Çekme
+# 4) Çıkış(q)
 # -----------------
 # """)
 
 # sys_şifre = "9876"
 # deneme = 0
 # bakiye = 1000
-# while deneme <3:
+
+# while deneme < 3:
 #     şifre = input("Şifre: ")
-#     while True:    
-#         if sys_şifre == şifre:
-            
+#     if sys_şifre == şifre:
+#         while True:
 #             seçim = input("Seçiminiz: ")
 #             if seçim == "q":
 #                 print("Bankadan Çıkılıyor")
 #                 break
 #             elif seçim == "1":
-#                 print(f"Bakiyeniz: {bakiye}TL")
+#                 print(f"Bakiyeniz: {bakiye} TL")
 #             elif seçim == "2":
 #                 deposit = int(input("Yatırılacak Miktar: "))
-#                 print(f"{deposit}TL Yatırılmıştır")
+#                 print(f"{deposit} TL Yatırılmıştır")
 #                 bakiye += deposit
 #             elif seçim == "3":
-#                 Çekilen = int(input("Çekilecek Miktar: "))
-#                 if bakiye - Çekilen < 0:
-#                     print(f"Bu miktarda para çekemezsiniz\nBakiyeniz {bakiye}")
-#                 else:    
-#                     print(f"Bankanızdan {Çekilen}TL çekilmiştir")
-#                     bakiye -= Çekilen
+#                 çekilen = int(input("Çekilecek Miktar: "))
+#                 if bakiye - çekilen < 0:
+#                     print(f"Bu miktarda para çekemezsiniz. Bakiyeniz: {bakiye}")
+#                 else:
+#                     print(f"Bankanızdan {çekilen} TL çekilmiştir")
+#                     bakiye -= çekilen
 #             else:
-#                 print("Düzgün aralıkta bir seçim yapın")
-#             break
-#         else:
-#             print("Yanlış Şifre")
-#         deneme += 1    
+#                 print("Geçerli bir seçim yapın.")
+#         break  # Doğru şifre girildikten sonra dış döngüden de çık
+#     else:
+#         deneme += 1
+#         print("Yanlış Şifre")
+
+# if deneme == 3:
+#     print("3 defa yanlış şifre girdiniz. Hesap kilitlendi.")
+
+
+
+
+
