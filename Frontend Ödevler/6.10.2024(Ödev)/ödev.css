@@ -1,0 +1,48 @@
+body {
+    background-color: #ADD8E6; 
+}
+
+h1 {
+    border: 1px solid black;
+}
+
+h2 {
+    color: purple;
+}
+
+input {
+    border: 2px solid darkred;
+}
+
+/* Set input sizes for text inputs */
+input[type="text"] {
+    width: 600px;
+    height: 40px;
+}
+
+div p {
+    background-color: #ffffe0;
+}
+
+#textblock {
+    border: 5px solid gray;
+    height: 400px;
+    width: 800px;
+}
+
+#google {
+    color: red;
+}
+#google:visited{
+    color: greenyellow;
+}
+#nesne {
+    text-decoration: overline;
+    color: purple;
+}
+.cikis{
+    background-color: blue;
+    border: 4px dashed yellow;
+    padding: 20px;
+    color: white;
+}
